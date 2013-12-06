@@ -1,0 +1,14 @@
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+	ssid="wireless.artic.edu"
+	proto=RSN
+	key_mgmt=WPA-EAP
+	pairwise=CCMP
+	auth_alg=OPEN
+	eap=TTLS
+	identity="YOUR_USERNAME"
+	password="SECRET_PASSWORD"
+	phase2="auth=PAP"
+}

@@ -17,7 +17,7 @@ sudo apt-get install tmux
 
 http://www.stuffaboutcode.com/2012/06/raspberry-pi-run-program-at-start-up.html
 
-	ln -s ~/rpi-setup/src/tmux /etc/init.d/tmux
+	sudo cp ~/rpi-setup/src/tmux /etc/init.d/tmux
 	sudo chmod 755 /etc/init.d/tmux
 
 test:

@@ -2,62 +2,77 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>Raspberry Pi Setup</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8">
+    <title>Raspberry Pi Setup</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+    <!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="{{ site.url }}/stylesheets/base.css">
-	<link rel="stylesheet" href="{{ site.url }}/stylesheets/skeleton.css">
-	<link rel="stylesheet" href="{{ site.url }}/stylesheets/layout.css">
-	<link rel="stylesheet" href="{{ site.url }}/stylesheets/style.css">
+    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="{{ site.url }}stylesheets/style.css">
 
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Favicons
+    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
+
 <body>
 
 
 
-	<!-- Primary Page Layout
+    <!-- Primary Page Layout
 	================================================== -->
 
-	<div class="container">
-		<div class="three columns" id="navigation">
-			<ul>
-				{% for page in site.pages %}
-					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-				{% endfor %}
-			</ul>
-		</div>
-		<div class="twelve columns offset-by-one">
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="pure-menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu pure-menu-open">
+                <a class="pure-menu-heading" href="http://purecss.io/">RPI Setup</a>
+
+                <ul>
+                    {% for page in site.pages %}
+                    <li>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+		<div id="main">
 			{{ content }}
 		</div>
 
-	</div><!-- container -->
+    </div>
 
-
-<!-- End Document
+    <!-- End Document
 ================================================== -->
 </body>
+
 </html>
