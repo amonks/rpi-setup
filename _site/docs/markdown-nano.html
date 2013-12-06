@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
+	<title>Raspberry Pi Setup</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="http://andrewjmonks.github.io/rpi-setup//stylesheets/base.css">
 	<link rel="stylesheet" href="http://andrewjmonks.github.io/rpi-setup//stylesheets/skeleton.css">
 	<link rel="stylesheet" href="http://andrewjmonks.github.io/rpi-setup//stylesheets/layout.css">
+	<link rel="stylesheet" href="http://andrewjmonks.github.io/rpi-setup//stylesheets/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,35 +46,25 @@
 		<div class="three columns" id="navigation">
 			<ul>
 				
-					<li><a href="/mosh-tmux">Mosh Tmux</a></li>
+					<li><a href="/docs/jekyll-website.html">jekyll website</a></li>
 				
-					<li><a href="/markdown-nano">Markdown Nano</a></li>
+					<li><a href="/docs/markdown-nano.html">markdown nano</a></li>
 				
-					<li><a href="/jekyll-website">Jekyll Website</a></li>
+					<li><a href="/docs/mosh-tmux.html">mosh tmux</a></li>
 				
-					<li><a href="/index">Index</a></li>
+					<li><a href="/index.html">Index</a></li>
 				
 			</ul>
 		</div>
 		<div class="twelve columns offset-by-one">
-			<h1 id='jekyll_website'>jekyll website</h1>
+			<h1 id='add_markdown_syntax_highlighting_to_nano'>add markdown syntax highlighting to nano</h1>
 
-<p>http://oli.jp/2011/github-pages-workflow/</p>
+<p>symlink syntax into proper folder, then enable it</p>
 
-<h2 id='initial_setup'>initial setup</h2>
+<pre><code>sudo ln -s ~/rpi-setup/src/markdown.nanorc /usr/share/nano/markdown.nanorc
+cat /usr/share/nano/markdown.nanorc &gt; ~/.nanorc</code></pre>
 
-<p>in folder of website</p>
-
-<pre><code>git init
-git checkout -b gh-pages
-git add .
-git commit -am init
-git remote add origin git@github.com:andrewjmonks/rpi-setup.git
-git push origin gh-pages</code></pre>
-
-<p>set default branch</p>
-
-<p>./.git/config</p>
+<p>from https://github.com/serialhex/nano-highlight</p>
 		</div>
 
 	</div><!-- container -->

@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
+	<title>Raspberry Pi Setup</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="{{ site.url }}/stylesheets/base.css">
 	<link rel="stylesheet" href="{{ site.url }}/stylesheets/skeleton.css">
 	<link rel="stylesheet" href="{{ site.url }}/stylesheets/layout.css">
+	<link rel="stylesheet" href="{{ site.url }}/stylesheets/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,8 +45,8 @@
 	<div class="container">
 		<div class="three columns" id="navigation">
 			<ul>
-				{% for post in site.posts %}
-					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% for page in site.pages %}
+					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
