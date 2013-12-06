@@ -58,6 +58,10 @@
                 <ul>
                     
                     <li>
+                        <a href="/docs/initial-setup.html">Initial Setup</a>
+                    </li>
+                    
+                    <li>
                         <a href="/docs/jekyll-website.html">Jekyll Website</a>
                     </li>
                     
@@ -77,6 +81,9 @@
                         <a href="/index.html">Raspberry Pi Guides</a>
                     </li>
                     
+                    <li class="menu-item-divided">
+                        <a href="https://github.com/andrewjmonks/rpi-setup">Source</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -84,9 +91,23 @@
 		<div id="main" class="content">
 			<h1 id='rpi_setup'>rpi setup</h1>
 
-<p>set keymap; locale; expand</p>
+<p>rpi setup is a collection of guides about doing various things that might involve a RaspberryPi</p>
 
-<p>sudo apt-get update sudo apt-get upgrade</p>
+<p>The guides assume that you&#8217;ve run <code>git clone https://github.com/andrewjmonks/rpi-setup.git</code> in the home directory of your pi.</p>
+
+<h2 id='structure'>structure</h2>
+
+<p>One single github repo includes the website, its source files, and the source files for the pi.</p>
+
+<p>The website is generated from individual markdown files in the <code>/docs</code> folder, into <code>_site</code>. If you&#8217;re in your pi terminal, read the docs with <code>less ~/rpi-setup/docs/wifi-at-saic.md</code></p>
+
+<p>Pi source files and scripts are in <code>/src</code>.</p>
+
+<h2 id='credits'>credits</h2>
+
+<p>Website and guides by <a href='http://monks.co'>Andrew Monks</a></p>
+
+<p>Code and site hosted on <a href='https://github.com/andrewjmonks/rpi-setup'>Github</a></p>
 		</div>
 
     </div>

@@ -2,6 +2,9 @@
 
 layout: default
 title: Jekyll Website
+tags: 
+- web
+- guide
 
 ---
 

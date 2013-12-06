@@ -2,6 +2,9 @@
 
 layout: default
 title: mosh tmux
+tags: 
+- rpi
+- guide
 
 ---
 

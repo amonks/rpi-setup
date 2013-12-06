@@ -2,6 +2,9 @@
 
 layout: default
 title: markdown nano
+tags: 
+- rpi 
+- guide
 
 ---
 

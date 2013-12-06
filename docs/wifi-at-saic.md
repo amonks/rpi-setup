@@ -2,6 +2,9 @@
 
 layout: default
 title: Wifi at SAIC
+tags: 
+- rpi
+- guide
 
 ---
 
