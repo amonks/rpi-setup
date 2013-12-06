@@ -27,3 +27,7 @@ set dns
 
 	* 10800 IN A 204.232.175.78
 	@ 10800 IN A 204.232.175.78
+
+## credits
+
+http://oli.jp/2011/github-pages-workflow/
