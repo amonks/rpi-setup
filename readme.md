@@ -20,8 +20,10 @@ The website is generated from individual markdown files in the `/docs` folder, i
 
 Pi source files and scripts are in `/src`.
 
+`/assets`, `/_layouts`, `/.gitignore`, `CNAME`, `Gemfile`, `Gemfile.lock`, `_config.yml`, and `readme.md` are used by github to generate the website, which is available at http://endurativemod.es
+
 ## credits
 
 Website and guides by [Andrew Monks](http://monks.co)
 
-Code and site hosted on [Github](https://github.com/andrewjmonks/rpi-setup)
+Code and site hosted on [Github](https://github.com/andrewjmonks/rpi-setup
