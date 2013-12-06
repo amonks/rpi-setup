@@ -11,7 +11,7 @@
     <!-- Basic Page Needs
   ================================================== -->
     <meta charset="utf-8">
-    <title>Raspberry Pi Setup</title>
+    <title>{{page.title}}</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -22,7 +22,7 @@
     <!-- CSS
   ================================================== -->
     <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="{{ site.url }}stylesheets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-		<div id="main">
+		<div id="main" class="content">
 			{{ content }}
 		</div>
 
@@ -73,6 +73,8 @@
 
     <!-- End Document
 ================================================== -->
+    <script src="/js/ui.js"></script>
+
 </body>
 
 </html>

@@ -11,7 +11,7 @@
     <!-- Basic Page Needs
   ================================================== -->
     <meta charset="utf-8">
-    <title>Raspberry Pi Setup</title>
+    <title>Jekyll Website</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -22,7 +22,7 @@
     <!-- CSS
   ================================================== -->
     <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="http://andrewjmonks.github.io/rpi-setup/stylesheets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,7 +58,7 @@
                 <ul>
                     
                     <li>
-                        <a href="/docs/jekyll-website.html">jekyll website</a>
+                        <a href="/docs/jekyll-website.html">Jekyll Website</a>
                     </li>
                     
                     <li>
@@ -74,21 +74,19 @@
                     </li>
                     
                     <li>
-                        <a href="/index.html">Index</a>
+                        <a href="/index.html">Raspberry Pi Guides</a>
                     </li>
                     
                 </ul>
             </div>
         </div>
 
-		<div id="main">
+		<div id="main" class="content">
 			<h1 id='jekyll_website'>jekyll website</h1>
-
-<p>http://oli.jp/2011/github-pages-workflow/</p>
 
 <h2 id='initial_setup'>initial setup</h2>
 
-<p>in folder of website</p>
+<p>in the website directory, create a git repo, create a gh-pages branch, and push only that branch (no master):</p>
 
 <pre><code>git init
 git checkout -b gh-pages
@@ -97,15 +95,38 @@ git commit -am init
 git remote add origin git@github.com:andrewjmonks/rpi-setup.git
 git push origin gh-pages</code></pre>
 
-<p>set default branch</p>
+<h2 id='set_up_jekyll_for_github_pages'>set up jekyll for github pages</h2>
 
-<p>./.git/config</p>
+<pre><code>gem install github-pages
+echo &quot;gem &#39;github-pages&#39;&quot; &gt; Gemfile
+bundle install</code></pre>
+
+<h2 id='serve'>serve</h2>
+
+<pre><code>bundle exec jekyll serve --watch</code></pre>
+
+<h2 id='how_jekyll_works'>how jekyll works</h2>
+
+<p>Jekyll will render any markdown file in its directory, provided that markdown file starts with a yaml header (which is any text (a blank line works) between two lines of &#8221;&#8212;&#8221;). Here&#8217;s this page&#8217;s header as an example:</p>
+
+<pre><code>---
+
+layout: default
+title: jekyll website
+
+---</code></pre>
+
+<p><code>layout:</code> specifies which layout to use (mandatory), and <code>title:</code> sets the variable &#8216;title&#8217;. You can make up and use arbitrary variables for metadata.</p>
+
+<p>You can then call these variables using curly braces. For example, including <code>{{ page.title }}</code> in the markdown of this page renders as &#8220;Jekyll Website&#8221; (quotation marks added).</p>
 		</div>
 
     </div>
 
     <!-- End Document
 ================================================== -->
+    <script src="/js/ui.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Index
+title: Raspberry Pi Guides
 permalink: /index.html
 
 ---
