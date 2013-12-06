@@ -35,11 +35,11 @@ The content `<div>` is where all your content goes.
 }
 
 h1, h2 {
-	line-height: 1.2em;
-	color: #333;
-	text-align: center;
-	padding: 2.5em 2em 0;
-	border-bottom: 1px solid #eee;
+    line-height: 1.2em;
+    color: #333;
+    text-align: center;
+    padding: 2.5em 2em 0;
+    border-bottom: 1px solid #eee;
  }
  h1 {
     font-size: 3em;
@@ -203,11 +203,11 @@ Hides the menu at `767px`, but modify this based on your app's needs.
     }
         #layout.active {
             position: relative;
-            left: 150px;
+            left: 200px;
         }
             #layout.active #menu {
-                left: 150px;
-                width: 150px;
+                left: 200px;
+                width: 200px;
             }
 
     #menu {
@@ -221,6 +221,6 @@ Hides the menu at `767px`, but modify this based on your app's needs.
     }
 
     #layout.active .pure-menu-link {
-        left: 150px;
+        left: 200px;
     }
 }
