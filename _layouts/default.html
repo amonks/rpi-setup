@@ -48,9 +48,9 @@
         <div class="row">
             <div id="sidebar" class="col-md-3">
                 <ul class="nav nav-pills nav-stacked">
-                    {% for page in site.pages %}
+                    {% for post in site.posts %}
                     <li>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
+                        <a href="{{ page.url }}">{{ post.title }}</a>
                     </li>
                     {% endfor %}
                     <li class="menu-item-divided">
