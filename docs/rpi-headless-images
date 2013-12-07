@@ -22,3 +22,13 @@ I use caca-utils for this; it converts images into ascii-art and renders them di
 ## usage
 
 	cacaview image.png
+
+## controls
+
+*	*+* Zoom in
+
+*	*-* Zoom out
+
+*	*d* Change differ
+
+*	*hjkl*: Move
