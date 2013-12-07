@@ -27,14 +27,12 @@ create mount point for drive
 
 check drive location:
 
-	ls /dev | grep sd
+	ls /dev/sd*
 
 You should get a list. Mine is
 	
-	$ ls /dev | grep sd
-	sda
-	sda1
-	sda2
+	$ ls /dev/sd*
+	/dev/sda  /dev/sda1  /dev/sda2
 
 the highest number was plugged in most recently. Mount it with 
 
