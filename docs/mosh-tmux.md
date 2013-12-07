@@ -49,4 +49,14 @@ attach to tmux session:
 
 detach when you're done:
 
-	^C b
+	^B d
+
+## tmux extras
+
+*	`^B t` current time
+
+*	`^B "` split horizontal
+
+*	`^B %` split vertical
+
+*	`^B [arrow keys]` navigate between panes
