@@ -36,3 +36,17 @@ that last attach shouldn't work
 run at startup:
 
 	sudo update-rc.d tmux defaults
+
+## usage
+
+mosh into raspberrypi:
+
+	mosh pi@raspberrypi.local
+
+attach to tmux session:
+
+	tmux attach
+
+detach when you're done:
+
+	^C b
