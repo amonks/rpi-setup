@@ -17,4 +17,26 @@ The volume usually seems to start at zero; you'll need to turn it up within the 
 
 navigate with arrow keys.
 
+## usb sound card
+
 I'm using a [cheap usb audio interface](http://www.amazon.com/gp/product/B001MSS6CS/) for a crappy mic input. it works.
+
+To use a usb soundcard by default, edit `/etc/modprobe.d/alsa-base.conf`. The last line should be 
+
+	options snd-usb-audio index=-2
+
+Change the index to 0, making it 
+
+	options snd-usb-audio index=0
+
+and reboot. After rebooting, you can test it with
+
+	aplay /usr/share/scratch/Media/Sounds/Animal/Bird.wav 
+
+or
+
+	speaker-test -c2 -D hw:0,0
+
+### credits
+
+from http://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/instructions

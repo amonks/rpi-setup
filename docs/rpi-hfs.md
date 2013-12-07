@@ -19,3 +19,23 @@ install hfsutils from apt
 	sudo apt-get update
 	sudo apt-get install hfsutils hfsprogs hfsutils
 
+create mount point for drive
+
+	sudo mkdir /mnt/usbdrive
+
+check drive location:
+
+	ls /dev | grep sd
+
+You should get a list. Mine is
+	
+	$ ls /dev | grep sd
+	sda
+	sda1
+	sda2
+
+the highest number was plugged in most recently. Mount it with 
+
+	sudo mount /dev/sda2 /mnt/usbdrive
+
+	
