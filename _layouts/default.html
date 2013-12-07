@@ -17,11 +17,12 @@
 
     <!-- Mobile Specific Metas
   ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS
+    <!-- Bootstrap
   ================================================== -->
-    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/assets/style.css">
 
     <!--[if lt IE 9]>
@@ -44,15 +45,9 @@
     <!-- Primary Page Layout
 	================================================== -->
 
-    <div id="layout">
-        <!-- Menu toggle -->
-        <a href="#menu" id="menuLink" class="pure-menu-link">
-            <!-- Hamburger icon -->
-            <span></span>
-        </a>
-
-        <div id="menu">
-            <div class="pure-menu pure-menu-open">
+    <div id="container">
+        <div class="row">
+            <div id="menu" class="col-md-3">
                 <a class="pure-menu-heading" href="http://endurativemod.es">RPI Setup</a>
 
                 <ul>
@@ -68,7 +63,7 @@
             </div>
         </div>
 
-		<div id="main" class="content">
+		<div id="main" class="content col-md-9">
 			{{ content }}
 		</div>
 
@@ -76,7 +71,6 @@
 
     <!-- End Document
 ================================================== -->
-    <script src="/assets/ui.js"></script>
 
 </body>
 
