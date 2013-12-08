@@ -24,3 +24,7 @@ html, body {
 footer, #push {
 	height: 60px;
 }
+
+#date {
+	color: #999;
+}
