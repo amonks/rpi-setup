@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: CLI video on RPI
+title: CLI video control on RPI
 tags: 
 - rpi
 - guide
