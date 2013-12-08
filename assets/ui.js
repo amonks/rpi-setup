@@ -30,7 +30,7 @@ $('.topic').each(function() {
         container.insertBefore(collection[0]);
         for(i=0;i<collection.length;i++)
         {
-            collection[i].appendTo($('.nav .' + thisClass));
+            collection[i].appendTo($('.nav').filter('.' + thisClass));
         }
         collection = [];
     }
