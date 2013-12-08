@@ -18,11 +18,11 @@ Fortunately, it's possible to get around this by creating a jekyll list of all p
 ## generate post list in jekyll
 
 	<ul class="nav">
-		{% for post in site.posts %}
+		{{ "{% for post in site.posts " }}%}
 		<li class="{{ "{{ post.url " }}}}">
 		    <a href="{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a>
 		</li>
-		{% endfor %}
+		{{ "{% endfor " }}%}
 	</ul>
 
 ## reorder post list using jquery
