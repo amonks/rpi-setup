@@ -25,11 +25,11 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
     <!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <!-- Favicons
-	================================================== -->
+    ================================================== -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
@@ -42,11 +42,13 @@
 
 
     <!-- Primary Page Layout
-	================================================== -->
+    ================================================== -->
 
     <div class="container">
         <div class="row page-header">
-            <h1>Raspberry Pi Guides <small>by Andrew Monks</small></h1>
+            <h1>Raspberry Pi Guides
+                <small>by Andrew Monks</small>
+            </h1>
         </div>
         <div class="row">
             <div id="sidebar" class="col-md-3">
@@ -57,15 +59,15 @@
                     </li>
                     {% endfor %}
                 </ul>
-               <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-edit"></span> Source on Github
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-edit"></span>Source on Github
                 </button>
             </div>
 
-    		<div id="main" class="content col-md-9">
-    			{{ content }}
-    		</div>
-        
+            <div id="main" class="content col-md-9">
+                {{ content }}
+            </div>
+
         </div>
 
     </div>
