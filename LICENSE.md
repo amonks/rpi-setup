@@ -2,7 +2,7 @@
 
 layout: default
 title: License
-permalink: /license.html
+permalink: /license/index.html
 
 ---
 
