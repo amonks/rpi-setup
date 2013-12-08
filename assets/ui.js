@@ -46,7 +46,7 @@ $('#sidebar h3').each(function() {
 
 // sort nav by datetime
 
-$('.nav').children().tsort({attr:'datetime'});
+$('.nav').children().tsort({order:'desc',attr:'datetime'});
 
 $("li:contains('" + document.title + "')").addClass("active")
 // // start by declaring an order for the options
