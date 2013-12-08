@@ -3,9 +3,10 @@
 }
 
 footer {
-	background: #ccc;
+	background: #eee;
 	text-align: center;
 	font-style: italic;
+	padding-top: 20px;
 }
 
 html, body {
