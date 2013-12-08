@@ -31,6 +31,7 @@ footer, #push {
 }
 
 pre.prettyprint {
-	padding: 9.5px;
-	border: 1px solid #ccc;
+	padding: 9.5px !important;
+	border: 1px solid #ccc !important;
+	background-color: #f5f5f5 !important;
 }
