@@ -14,26 +14,26 @@ $('.nav').children().tsort({attr:'class'});
 
 // group nav classes and add headers
 
-// // first remove original ul
-// $(".nav").children().unwrap()
+// first remove original ul
+$(".nav").children().unwrap()
 
-// // then make new ones
-// var collection = [];
+// then make new ones
+var collection = [];
 
-// $('.topic').each(function() {
-//     var thisClass = $(this).attr('class').split(" ")[0];
-//     var nextBox = $(this).next().hasClass(thisClass);
+$('.topic').each(function() {
+    var thisClass = $(this).attr('class').split(" ")[0];
+    var nextBox = $(this).next().hasClass(thisClass);
     
-//     collection.push($(this));
+    collection.push($(this));
     
-//     if(!nextBox)
-//     {
-//         var container = $('<h3>'+ thisClass + ':</h3> <ul class="nav nav-pills nav-stacked ' + thisClass + '"></div>');
-//         container.insertBefore(collection[0]);
-//         for(i=0;i<collection.length;i++)
-//         {
-//             collection[i].appendTo($('.nav').filter('.' + thisClass));
-//         }
-//         collection = [];
-//     }
-// })
+    if(!nextBox)
+    {
+        var container = $('<h3>'+ thisClass + ':</h3> <ul class="nav nav-pills nav-stacked ' + thisClass + '"></div>');
+        container.insertBefore(collection[0]);
+        for(i=0;i<collection.length;i++)
+        {
+            collection[i].appendTo($('.nav').filter('.' + thisClass));
+        }
+        collection = [];
+    }
+})
