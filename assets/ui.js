@@ -26,11 +26,11 @@ $('.topic').each(function() {
     
     if(!nextBox)
     {
-        var container = $('<h4>'+ thisClass + ':</h4> <ul class="nav nav-pills nav-stacked' + thisClass + '"></div>');
+        var container = $('<h4>'+ thisClass + ':</h4> <ul class="nav nav-pills nav-stacked ' + thisClass + '"></div>');
         container.insertBefore(collection[0]);
         for(i=0;i<collection.length;i++)
         {
-            // collection[i].appendTo(container);
+            collection[i].appendTo($("." + thisClass));
         }
         collection = [];
     }
