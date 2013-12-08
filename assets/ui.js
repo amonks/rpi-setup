@@ -26,7 +26,7 @@ $('.topic').each(function() {
     
     if(!nextBox)
     {
-        var container = $('<h4>'+ thisClass + ':</h4> <ul class="nav nav-pills nav-stacked ' + thisClass + '"></div>');
+        var container = $('<h3>'+ thisClass + ':</h3> <ul class="nav nav-pills nav-stacked ' + thisClass + '"></div>');
         container.insertBefore(collection[0]);
         for(i=0;i<collection.length;i++)
         {
