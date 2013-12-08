@@ -61,4 +61,4 @@ $("li:contains('" + document.title + "')").addClass("active")
 
 // turn on pretty printing for code blocks
 
-$('pre').addClass('prettyprint');
+$('pre').addClass('prettyprint linenums');
