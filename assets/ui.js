@@ -2,7 +2,7 @@
 
 $('.nav').children().tsort({attr:'class'});
 
-$('li:contains(document.title)').addClass("active")
+$('li:contains('" + document.title + "')")').addClass("active")
 // // start by declaring an order for the options
 // var array = ['rpi', 'web'];
 
