@@ -58,7 +58,7 @@
 				<ul class="nav nav-pills nav-stacked">
 					{% for post in site.posts %}
 						<li class="{{post.group}}" dateTime="{{post.date}}">
-							<a href="{{ post.url }}"><time dateTime="{{post.date}}">{{ post.title }}</time></a>
+							<a href="{{ post.url }}" title="{{ page.date | date: "%-d %B %Y" }}"><time dateTime="{{post.date}}">{{ post.title }}</time></a>
 						</li>
 					{% endfor %}
 				</ul>
