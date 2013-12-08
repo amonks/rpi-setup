@@ -25,11 +25,6 @@ footer, #push {
 	height: 60px;
 }
 
-#date {
-	color: #999;
-	text-align: right;
-}
-
 pre.prettyprint {
 	padding: 9.5px !important;
 	border: 1px solid #ccc !important;
