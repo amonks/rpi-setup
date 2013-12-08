@@ -39,6 +39,6 @@ $('#sidebar li').each(function() {
     }
 })
 
-$('#sidebar li').each(function() {
+$('#sidebar h3').each(function() {
     $(this).html(String( $(this).html()).replace(/-/g, ' '));
 })
