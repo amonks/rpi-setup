@@ -56,3 +56,9 @@ $("li:contains('" + document.title + "')").addClass("active")
 // $.each(array,function(index,value){
 //    $('.nav').append($('.'+value));
 // });
+
+
+
+// turn on pretty printing for code blocks
+
+$('pre').addClass('strike');
