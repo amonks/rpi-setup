@@ -26,6 +26,8 @@ Pi source files and scripts are in `/src`.
 
 Website and guides by [Andrew Monks](http://monks.co)
 
+built with [jekyll](http://jekyllrb.com) and [bootstrap](http://getbootstrap.com)
+
 Code and site hosted on [Github](https://github.com/andrewjmonks/rpi-setup)
 
 released under the [MIT License](/license)
