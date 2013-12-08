@@ -19,8 +19,8 @@ Fortunately, it's possible to get around this by creating a jekyll list of all p
 
 	<ul class="nav">
 		{% for post in site.posts %}
-		<li class="{{post.category}}">
-		    <a href="{{ post.url }}">{{ post.title }}</a>
+		<li class="{{ "{{ post.url " }}}}">
+		    <a href="{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a>
 		</li>
 		{% endfor %}
 	</ul>
