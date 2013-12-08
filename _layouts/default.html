@@ -8,74 +8,78 @@
 
 <head>
 
-    <!-- Basic Page Needs
+	<!-- Basic Page Needs
   ================================================== -->
-    <meta charset="utf-8">
-    <title>{{page.title}}</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<title>{{page.title}}</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Mobile Specific Metas
+	<!-- Mobile Specific Metas
   ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css
+	<!-- css
   ================================================== -->
-    <link rel="stylesheet" href="/assets/style.css" />
+	<link rel="stylesheet" href="/assets/style.css" />
 
-    <!-- js
+	<!-- js
   ================================================== -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <!-- Bootstrap
+	<!-- Bootstrap
   ================================================== -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 </head>
 
 <body>
 
 
 
-    <!-- Primary Page Layout
-    ================================================== -->
+	<!-- Primary Page Layout
+	================================================== -->
 
-    <div class="container">
-        <div class="row page-header">
-            <h1>Raspberry Pi Guides
-                <small>by Andrew Monks</small>
-            </h1>
-        </div>
-        <div class="row">
-            <div id="sidebar" class="col-md-3">
-                <h3>Topics</h3>
-                <ul class="nav nav-pills nav-stacked">
-                    {% for post in site.posts %}
-                    <li class="{{post.group}} topic">
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-edit"></span> Source on Github
-                </button>
-            </div>
+	<div class="container">
+		<div class="row page-header">
+			<h1>Raspberry Pi Guides
+				<small>by Andrew Monks</small>
+			</h1>
+		</div>
+		<div class="row">
+			<div id="sidebar" class="col-md-3">
+				<h3>Topics</h3>
+				<ul class="nav nav-pills nav-stacked">
+					{% for post in site.posts %}
+						{% if post.title == page_title %}
+							<li class="{{post.group}} topic active">
+						{% else %}
+							<li class="{{post.group}} topic ">
+						{% endif %}
+							<a href="{{ post.url }}">{{ post.title }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-edit"></span> Source on Github
+				</button>
+			</div>
 
-            <div id="main" class="content col-md-9">
-                {{ content }}
-            </div>
+			<div id="main" class="content col-md-9">
+				{{ content }}
+			</div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
-    <!-- End Document
+	<!-- End Document
 ================================================== -->
-    <script src="/assets/ui.js"></script>
+	<script src="/assets/ui.js"></script>
 
 </body>
 
