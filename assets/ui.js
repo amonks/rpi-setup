@@ -12,24 +12,22 @@ $.each(array,function(index,value){
 
 // group nav classes and add headers
 
-$(document).ready(function() {
-    var collection = [];
+var collection = [];
+
+$('.topic').each(function() {
+    var thisClass = $(this).attr('class');
+    var nextBox = $(this).next().hasClass(thisClass);
     
-    $('.topic').each(function() {
-        var thisClass = $(this).attr('class');
-        var nextBox = $(this).next().hasClass(thisClass);
-        
-        collection.push($(this));
-        
-        if(!nextBox)
+    collection.push($(this));
+    
+    if(!nextBox)
+    {
+        var container = $('<ul class="nav nav-pills nav-stacked"></div>');
+        container.insertBefore(collection[0]);
+        for(i=0;i<collection.length;i++)
         {
-            var container = $('<ul class="nav nav-pills nav-stacked"></div>');
-            container.insertBefore(collection[0]);
-            for(i=0;i<collection.length;i++)
-            {
-                collection[i].appendTo(container);
-            }
-            collection = [];
+            collection[i].appendTo(container);
         }
-    })
+        collection = [];
+    }
 })
