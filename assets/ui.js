@@ -1,14 +1,16 @@
 // sort nav by class
 
+$(function() {
     
-$('#nav ul').sortChildren(function(elem) {
-    var t = [];
-    $(elem).children().each(function() {
-        t.push($.sortChildren.map(elem));
+    $('#nav ul').sortChildren(function(elem) {
+        var t = [];
+        $(elem).children().each(function() {
+            t.push($.sortChildren.map(elem));
+        });
+        return t;
     });
-    return t;
-});
     
+});
 
 
 
