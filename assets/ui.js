@@ -1,12 +1,14 @@
 // sort nav by class
 
-// start by declaring an order for the options
-var array = ['rpi', 'web'];
+$('.nav').tsort({attr:'class'});
 
-// then put the elements into that order
-$.each(array,function(index,value){
-   $('.nav').append($('.'+value));
-});
+// // start by declaring an order for the options
+// var array = ['rpi', 'web'];
+
+// // then put the elements into that order
+// $.each(array,function(index,value){
+//    $('.nav').append($('.'+value));
+// });
 
 
 

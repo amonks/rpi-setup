@@ -61,3 +61,7 @@ detach when you're done:
 *	`^B %` split vertical
 
 *	`^B [arrow keys]` navigate between panes
+
+### credit
+
+http://www.stuffaboutcode.com/2012/06/raspberry-pi-run-program-at-start-up.html
