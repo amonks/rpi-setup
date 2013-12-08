@@ -1,6 +1,6 @@
 // sort nav by class
 
-$('.nav').children().tsort({attr:'class'});
+$('.nav').children().tsort({attr:'class'.split(" ")[0]});
 
 // // start by declaring an order for the options
 // var array = ['rpi', 'web'];
