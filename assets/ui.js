@@ -1,11 +1,15 @@
 // sort nav by class
 
-// start by declaring an order for the options
-var array = ['rpi', 'web'];
-
-// then put the elements into that order
-$.each(array,function(index,value){
-   $('.nav').append($('.'+value));
+$(function() {
+    
+    $('#nav ul').sortChildren(function(elem) {
+        var t = [];
+        $(elem).children().each(function() {
+            t.push($.sortChildren.map(elem));
+        });
+        return t;
+    });
+    
 });
 
 
