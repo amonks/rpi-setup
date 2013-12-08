@@ -8,32 +8,33 @@
 
 <head>
 
-    <!-- Basic Page Needs
+	<!-- Basic Page Needs
   ================================================== -->
-    <meta charset="utf-8">
-    <title>Raspberry Pi Guides</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<title>Raspberry Pi Guides</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Mobile Specific Metas
+	<!-- Mobile Specific Metas
   ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS
+	<!-- css
   ================================================== -->
-    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="/assets/style.css">
+	<link rel="stylesheet" href="/assets/style.css" />
 
-    <!--[if lt IE 9]>
+	<!-- js
+  ================================================== -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.ucb.org.br/Scripts/tinysort/jquery.tinysort.js"></script>
+
+	<!-- Bootstrap
+  ================================================== -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-    <!-- Favicons
-	================================================== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
 
@@ -41,61 +42,88 @@
 
 
 
-    <!-- Primary Page Layout
+	<!-- Primary Page Layout
 	================================================== -->
 
-    <div id="layout">
-        <!-- Menu toggle -->
-        <a href="#menu" id="menuLink" class="pure-menu-link">
-            <!-- Hamburger icon -->
-            <span></span>
-        </a>
+	<div class="container">
+		<div class="row page-header">
+			<h1>Raspberry Pi Guides
+				<small>and also other guides</small>
+			</h1>
+		</div>
 
-        <div id="menu">
-            <div class="pure-menu pure-menu-open">
-                <a class="pure-menu-heading" href="http://endurativemod.es">RPI Setup</a>
+		<div class="row">
+			<div id="sidebar" class="col-md-3">
+				<ul class="nav nav-pills nav-stacked">
+					
+							<li class="open-frameworks">
+							<a href="/ofx-flocking">flocking in openframeworks</a>
+						</li>
+					
+							<li class="web">
+							<a href="/jekyll-categories">posts-by-category in Jekyll on Github Pages</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/rpi-sound">rapsberry pi sound</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/rpi-hfs">RaspberryPi HFS+</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/rpi-headless-images">view images inside a terminal</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/pi-cli-video">CLI video control on RPI</a>
+						</li>
+					
+							<li class="web">
+							<a href="/jekyll-categories">posts-by-category in Jekyll on Github Pages</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/wifi-at-saic">Wifi at SAIC</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/rpi-hardware">RPI Hardware</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/mosh-tmux">mosh tmux</a>
+						</li>
+					
+							<li class="web">
+							<a href="/migrate-to-gh-pages">migrate to gh-pages</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/markdown-nano">markdown nano</a>
+						</li>
+					
+							<li class="web">
+							<a href="/jekyll-website">Jekyll Website</a>
+						</li>
+					
+							<li class="raspberry-pi">
+							<a href="/initial-setup">Initial Setup</a>
+						</li>
+					
+				</ul>
+				<a href="https://github.com/amonks/rpi-setup/">
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-edit"></span> Source on Github
+					</button>
+				</a>
+			</div>
 
-                <ul>
-                    
-                    <li>
-                        <a href="/docs/initial-setup.html">Initial Setup</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/docs/jekyll-website.html">Jekyll Website</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/docs/markdown-nano.html">markdown nano</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/docs/migrate-to-gh-pages.html">migrate to gh-pages</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/docs/mosh-tmux.html">mosh tmux</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/docs/wifi-at-saic.html">Wifi at SAIC</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/index.html">Raspberry Pi Guides</a>
-                    </li>
-                    
-                    <li class="menu-item-divided">
-                        <a href="https://github.com/andrewjmonks/rpi-setup">Source</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+			<div id="main" class="content col-md-9">
+				<h1 id='rpi_setup'>rpi setup</h1>
 
-		<div id="main" class="content">
-			<h1 id='rpi_setup'>rpi setup</h1>
-
-<p>rpi setup is a collection of guides about doing various things that might involve a RaspberryPi</p>
+<p>rpi setup is a collection of guides about doing various things that might involve a RaspberryPi. It also includes things I&#8217;ve learned about Jekyll while putting together this package.</p>
 
 <p>The guides assume that you&#8217;ve run <code>git clone https://github.com/andrewjmonks/rpi-setup.git</code> in the home directory of your pi.</p>
 
@@ -103,7 +131,7 @@
 
 <p>One single github repo includes the website, its source files, and the source files for the pi.</p>
 
-<p>The website is generated from individual markdown files in the <code>/docs</code> folder, into <code>_site</code>. If you&#8217;re in your pi terminal, read the docs with <code>less ~/rpi-setup/docs/wifi-at-saic.md</code></p>
+<p>The website is generated from individual markdown files in the <code>/_posts</code> folder, into <code>_site</code>. If you&#8217;re in your pi terminal, read the docs with <code>less ~/rpi-setup/posts/2013-12-6-wifi-at-saic.md</code></p>
 
 <p>Pi source files and scripts are in <code>/src</code>.</p>
 
@@ -114,13 +142,22 @@
 <p>Website and guides by <a href='http://monks.co'>Andrew Monks</a></p>
 
 <p>Code and site hosted on <a href='https://github.com/andrewjmonks/rpi-setup'>Github</a></p>
-		</div>
 
-    </div>
+<p>released under the <a href='/license'>MIT License</a></p>
+			</div>
+		</div>	
+		<div id="push"></div>
+	</div>
 
-    <!-- End Document
+	<footer>
+		<p>
+			by <a href="http://monks.co">Andrew Monks</a> &bull; released under the <a href="/license">MIT License</a>
+		</p>
+	</footer>
+
+	<!-- End Document
 ================================================== -->
-    <script src="/assets/ui.js"></script>
+	<script src="/assets/ui.js"></script>
 
 </body>
 
