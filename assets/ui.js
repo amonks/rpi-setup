@@ -19,14 +19,14 @@ $(".nav").children().unwrap()
 var collection = [];
 
 $('.topic').each(function() {
-    var thisClass = $(this).attr('class');
+    var thisClass = $(this).attr('class').split(" ")[0];
     var nextBox = $(this).next().hasClass(thisClass);
     
     collection.push($(this));
     
     if(!nextBox)
     {
-        var container = $('<h4>'+ thisClass.split(" ")[0] + ':</h4> <ul class="nav nav-pills nav-stacked"></div>');
+        var container = $('<h4>'+ thisClass + ':</h4> <ul class="nav nav-pills nav-stacked' + thisClass + '"></div>');
         container.insertBefore(collection[0]);
         for(i=0;i<collection.length;i++)
         {
