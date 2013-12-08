@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Category navigation in Jekyll on Github Pages
+title: posts-by-category in Jekyll on Github Pages
 tags:
 - guide
 - web
@@ -12,6 +12,8 @@ group: web
 # categories or tags in Jekyll on github pages
 
 Jekyll doesn't support getting all of the posts that belong to a category. This is annoying because it makes it difficult to make things like category archives or the menu on the left side of this page. 
+
+I believe it's possible to get around this using Jekyll plugins, but Github Pages doesn't support those.
 
 Fortunately, it's possible to get around this by creating a jekyll list of all posts, where the class of the post includes the category or tag, and then sorting that list using javascript/jquery.
 
