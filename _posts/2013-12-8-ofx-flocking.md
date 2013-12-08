@@ -19,7 +19,7 @@ I updated ofxFlocking to work on mavericks in openFrameworks 0.8.0
 
 ## installation
 
-Copy this folder into [your openframeworks folder/addons
+Copy this folder into your openframeworks folder/addons
 
 ## usage
 
