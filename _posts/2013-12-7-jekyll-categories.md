@@ -39,7 +39,13 @@ Fortunately, it's possible to get around this on the client side by creating a j
 	   $('.nav').append($('.'+value));
 	});
 
+or, import [tinysort](http://tinysort.sjeiti.com/dist/jquery.tinysort.min.js) and just do 
+	
+	// sort nav by class
 
+	$('.nav').children().tsort({attr:'class'});
+
+then
 
 	// group nav classes and add headers
 
