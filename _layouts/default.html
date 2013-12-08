@@ -48,15 +48,18 @@
 
 	<div class="container">
 		<div class="row page-header">
-			<a href="/">
-				<h1>Raspberry Pi Guides
-					<small>and also other guides</small>
-				</h1>
-			</a>
+			<h1>Raspberry Pi Guides
+				<small>and also other guides</small>
+			</h1>
 		</div>
 
 		<div class="row">
 			<div id="sidebar" class="col-md-3">
+				<a href="/">
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-home"></span> Home
+					</button>
+				</a>
 				<ul class="nav nav-pills nav-stacked">
 					{% for post in site.posts %}
 						<li class="{{post.group}}" dateTime="{{post.date}}">
