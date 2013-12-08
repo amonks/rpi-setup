@@ -40,5 +40,5 @@ $('#sidebar li').each(function() {
 })
 
 $('#sidebar li').each(function() {
-    $(this).html(String( $(this).text()).replace(/-/g, ' '));
+    $(this).html(String( $(this).html()).replace(/-/g, ' '));
 })
