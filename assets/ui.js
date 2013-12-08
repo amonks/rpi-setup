@@ -13,7 +13,7 @@ $.each(array,function(index,value){
 // group nav classes and add headers
 
 $(".nav li").each(function() {
-    var group = $(this).children("span").class;
+    var group = $(this).children("span").attr('class');
     // If the grouping <li> doesn't exist, create it
     if ($(".nav li.group." + group).length === 0) {
         $(".nav").append($('<li class="group ' + group + '">' + group + '<ul></ul></li>'));
