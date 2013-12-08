@@ -29,6 +29,8 @@ Fortunately, it's possible to get around this on the client side by creating a j
 
 ## reorder post list using jquery
 
+### first step
+
 	// sort nav by class
 
 	// start by declaring an order for the options
@@ -45,7 +47,7 @@ or, import [tinysort](http://tinysort.sjeiti.com/dist/jquery.tinysort.min.js) an
 
 	$('.nav').children().tsort({attr:'class'});
 
-then
+### second step
 
 	// group nav classes and add headers
 
