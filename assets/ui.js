@@ -41,3 +41,4 @@ $('#sidebar li').each(function() {
 
 $('#sidebar li').each(function() {
     $(this).replace("-"," ")
+})
