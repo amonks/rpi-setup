@@ -15,7 +15,7 @@ Jekyll doesn't support getting all of the posts that belong to a category. This 
 
 I believe it's possible to get around this using Jekyll plugins, but Github Pages doesn't support those.
 
-Fortunately, it's possible to get around this by creating a jekyll list of all posts, where the class of the post includes the category or tag, and then sorting that list using javascript/jquery.
+Fortunately, it's possible to get around this on the client side by creating a jekyll list of all posts, where the class of the post includes the category or tag, and then sorting that list using javascript/jquery.
 
 ## generate post list in jekyll
 
