@@ -21,7 +21,7 @@ $(".nav").children().unwrap()
 // then make new ones
 var collection = [];
 
-$('.topic').each(function() {
+$('#sidebar li').each(function() {
     var thisClass = $(this).attr('class').split(" ")[0];
     var nextBox = $(this).next().hasClass(thisClass);
     
