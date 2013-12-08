@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: jekyll-categories
+title: Category navigation in Jekyll on Github Pages
 tags:
 - guide
 - web
@@ -59,7 +59,7 @@ Fortunately, it's possible to get around this by creating a jekyll list of all p
 	        container.insertBefore(collection[0]);
 	        for(i=0;i<collection.length;i++)
 	        {
-	            collection[i].appendTo($(".nav"));
+	            collection[i].appendTo($('.nav').filter('.' + thisClass));
 	        }
 	        collection = [];
 	    }
