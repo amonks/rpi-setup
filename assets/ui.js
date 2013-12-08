@@ -22,7 +22,7 @@ $(".nav").children().unwrap()
 var collection = [];
 
 $('#sidebar li').each(function() {
-    var thisClass = $(this).attr('class').split(" ")[0].replace("-"," ");
+    var thisClass = $(this).attr('class').split(" ")[0];
     var nextBox = $(this).next().hasClass(thisClass);
     
     collection.push($(this));
@@ -38,3 +38,6 @@ $('#sidebar li').each(function() {
         collection = [];
     }
 })
+
+$('#sidebar li').each(function() {
+    $(this).replace("-"," ")
