@@ -29,3 +29,7 @@ footer, #push {
 	color: #999;
 	text-align: right;
 }
+
+pre {
+	padding: 10px;
+}
