@@ -12,6 +12,10 @@ $.each(array,function(index,value){
 
 // group nav classes and add headers
 
+// first remove original ul
+$(".nav").children().unwrap()
+
+// then make new ones
 var collection = [];
 
 $('.topic').each(function() {
