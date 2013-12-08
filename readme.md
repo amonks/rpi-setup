@@ -16,7 +16,7 @@ The guides assume that you've run `git clone https://github.com/andrewjmonks/rpi
 
 One single github repo includes the website, its source files, and the source files for the pi. 
 
-The website is generated from individual markdown files in the `/docs` folder, into `_site`. If you're in your pi terminal, read the docs with `less ~/rpi-setup/docs/wifi-at-saic.md`
+The website is generated from individual markdown files in the `/_posts` folder, into `_site`. If you're in your pi terminal, read the docs with `less ~/rpi-setup/posts/2013-12-6-wifi-at-saic.md`
 
 Pi source files and scripts are in `/src`.
 
