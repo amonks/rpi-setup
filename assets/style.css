@@ -4,8 +4,11 @@
 
 footer {
 	background: #eee;
-	padding-top: 20px;
-	margin-top: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2em;
 	text-align: center;
 	font-style: italic;
 }
