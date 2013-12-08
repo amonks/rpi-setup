@@ -33,4 +33,4 @@ symlink syntax into proper folder, then enable it
 
 ### credit
 
-from [marks space](https://github.com/serialhex/nano-highlight)
+from [serialhex's github](https://github.com/serialhex/nano-highlight)
