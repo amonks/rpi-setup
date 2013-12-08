@@ -31,4 +31,6 @@ symlink syntax into proper folder, then enable it
 	sudo cp ~/rpi-setup/src/markdown.nanorc /usr/share/nano/markdown.nanorc
 	cat /usr/share/nano/markdown.nanorc > ~/.nanorc
 
-from https://github.com/serialhex/nano-highlight
+### credit
+
+https://github.com/serialhex/nano-highlight
