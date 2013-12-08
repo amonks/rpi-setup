@@ -11,9 +11,11 @@ group: open-frameworks
 
 # ofxFlocking
 
-I just updated ofxFlocking to work in openFrameworks 0.8.0
+I updated ofxFlocking to work on mavericks in openFrameworks 0.8.0
 
-check it out on [github](https://github.com/amonks/ofxFlocking)
+[website](http://endurativemod.es/ofx-flocking)
+
+[github](https://github.com/amonks/ofxFlocking)
 
 ## installation
 
