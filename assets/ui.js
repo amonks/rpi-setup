@@ -12,12 +12,24 @@ $.each(array,function(index,value){
 
 // group nav classes and add headers
 
-$(".nav li").each(function() {
-    var group = $(this).attr('class');
-    // If the grouping <li> doesn't exist, create it
-    if ($(".nav li.group." + group).length === 0) {
-        $(".nav").append($('<ul class="group nav ' + group + '">' + group + '<ul class="nav nav-pills nav-stacked"></ul></li>'));
-    }
-    // Add the current <li> to the corresponding grouping <li>
-    $(this).appendTo($(".nav li.group." + group + " ul"));
-});
+$(document).ready(function() {
+    var collection = [];
+    
+    $('.topic').each(function() {
+        var thisClass = $(this).attr('class');
+        var nextBox = $(this).next().hasClass(thisClass);
+        
+        collection.push($(this));
+        
+        if(!nextBox)
+        {
+            var container = $('<ul class="nav nav-pills nav-stacked"></div>');
+            container.insertBefore(collection[0]);
+            for(i=0;i<collection.length;i++)
+            {
+                collection[i].appendTo(container);
+            }
+            collection = [];
+        }
+    })
+})
