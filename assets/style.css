@@ -30,6 +30,7 @@ footer, #push {
 	text-align: right;
 }
 
-pre {
-	padding: 10px;
+pre.prettyprint {
+	padding: 9.5px;
+	border: 1px solid #ccc;
 }
