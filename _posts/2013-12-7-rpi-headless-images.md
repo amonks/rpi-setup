@@ -5,7 +5,7 @@ title: view images inside a terminal
 tags: 
 - rpi
 - guide
-group: rpi
+group: raspberry-pi
 
 ---
 

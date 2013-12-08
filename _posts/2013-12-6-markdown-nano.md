@@ -5,7 +5,7 @@ title: markdown nano
 tags: 
 - rpi 
 - guide
-group: rpi
+group: raspberry-pi
 
 ---
 

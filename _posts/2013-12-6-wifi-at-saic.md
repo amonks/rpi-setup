@@ -5,7 +5,7 @@ title: Wifi at SAIC
 tags: 
 - rpi
 - guide
-group: rpi
+group: raspberry-pi
 
 ---
 

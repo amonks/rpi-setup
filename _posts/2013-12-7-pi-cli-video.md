@@ -6,7 +6,7 @@ tags:
 - rpi
 - guide
 - video
-group: rpi
+group: raspberry-pi
 
 ---
 

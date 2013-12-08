@@ -22,7 +22,7 @@ $(".nav").children().unwrap()
 var collection = [];
 
 $('#sidebar li').each(function() {
-    var thisClass = $(this).attr('class').split(" ")[0];
+    var thisClass = $(this).attr('class').split(" ")[0].replace("-"," ");
     var nextBox = $(this).next().hasClass(thisClass);
     
     collection.push($(this));
