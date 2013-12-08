@@ -55,7 +55,7 @@
 				<h3>Topics</h3>
 				<ul class="nav nav-pills nav-stacked">
 					{% for post in site.posts %}
-						{% if post.title == page_title %}
+						{% if post.title == page.title %}
 							<li class="{{post.group}} topic active">
 						{% else %}
 							<li class="{{post.group}} topic ">
