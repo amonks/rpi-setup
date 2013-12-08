@@ -21,8 +21,7 @@ var collection = [];
 $('.topic').each(function() {
     var thisClass = $(this).attr('class').split(" ")[0];
     var nextBox = $(this).next().hasClass(thisClass);
-    $(this).appendTo($(".nav"));
-
+    
     collection.push($(this));
     
     if(!nextBox)
@@ -31,7 +30,7 @@ $('.topic').each(function() {
         container.insertBefore(collection[0]);
         for(i=0;i<collection.length;i++)
         {
-            // collection[i].appendTo($(".nav"));
+            collection[i].appendTo($(".nav"));
         }
         collection = [];
     }
