@@ -6,6 +6,7 @@ tags:
 - rpi
 - guide
 - sound
+group: rpi
 
 ---
 

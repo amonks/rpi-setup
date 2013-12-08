@@ -5,6 +5,7 @@ title: Initial Setup
 tags:
 - guide
 - rpi
+group: rpi
 
 ---
 

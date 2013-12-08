@@ -5,6 +5,7 @@ title: migrate to gh-pages
 tags: 
 - web 
 - guide
+group: web
 
 ---
 

@@ -5,6 +5,7 @@ title: mosh tmux
 tags: 
 - rpi
 - guide
+group: rpi
 
 ---
 

@@ -5,6 +5,7 @@ title: RPI Hardware
 tags:
 - guide
 - rpi
+group: rpi
 
 ---
 

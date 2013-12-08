@@ -6,6 +6,7 @@ tags:
 - rpi
 - guide
 - video
+group: rpi
 
 ---
 
