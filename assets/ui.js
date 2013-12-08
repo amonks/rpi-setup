@@ -42,3 +42,17 @@ $('#sidebar li').each(function() {
 $('#sidebar h3').each(function() {
     $(this).html(String( $(this).html()).replace(/-/g, ' '));
 })
+
+
+// sort nav by datetime
+
+$('.nav').children().tsort({attr:'datetime'});
+
+$("li:contains('" + document.title + "')").addClass("active")
+// // start by declaring an order for the options
+// var array = ['rpi', 'web'];
+
+// // then put the elements into that order
+// $.each(array,function(index,value){
+//    $('.nav').append($('.'+value));
+// });
