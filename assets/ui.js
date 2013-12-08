@@ -28,7 +28,10 @@ $('.topic').each(function() {
     {
         var container = $('<h4>'+ thisClass.split(" ")[0] + ':</h4> <ul class="nav nav-pills nav-stacked"></div>');
         container.insertBefore(collection[0]);
-        collection.wrap(container);
+        for(i=0;i<collection.length;i++)
+        {
+            // collection[i].appendTo(container);
+        }
         collection = [];
     }
 })
