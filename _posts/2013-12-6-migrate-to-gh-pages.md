@@ -35,4 +35,4 @@ set dns
 
 ## credits
 
-http://oli.jp/2011/github-pages-workflow/
+from [oli.jp](http://oli.jp/2011/github-pages-workflow/)

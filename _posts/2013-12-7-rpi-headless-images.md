@@ -36,4 +36,4 @@ I use caca-utils for this; it converts images into ascii-art and renders them di
 
 ### credit
 
-http://marks-space.com/2012/12/03/view-images-as-ascii-in-the-terminal-on-a-raspberry-pi/
+from [mark's space](http://marks-space.com/2012/12/03/view-images-as-ascii-in-the-terminal-on-a-raspberry-pi/)

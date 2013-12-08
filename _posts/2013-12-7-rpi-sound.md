@@ -40,4 +40,4 @@ or
 
 ### credits
 
-from http://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/instructions
+from [adafruit](http://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/instructions)

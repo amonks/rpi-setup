@@ -62,4 +62,4 @@ detach when you're done:
 
 ### credit
 
-http://www.stuffaboutcode.com/2012/06/raspberry-pi-run-program-at-start-up.html
+from [stuffaboutcode](http://www.stuffaboutcode.com/2012/06/raspberry-pi-run-program-at-start-up.html)
