@@ -11,7 +11,7 @@ tags:
 
 # view images inside a terminal
 
-I often use my pi over ssh (or really [mosh](mosh-tmux.html)). Sometimes I want to view an image on the pi, but I don't want to mess with an x server or anything fancy. 
+I often use my pi over ssh (or really [mosh](mosh-tmux)). Sometimes I want to view an image on the pi, but I don't want to mess with an x server or anything fancy. 
 
 I use caca-utils for this; it converts images into ascii-art and renders them directly into the terminal
 

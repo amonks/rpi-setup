@@ -11,7 +11,7 @@ tags:
 
 # play video from the command line on RPI
 
-I often like to watch movies on a projector, but I don't always want to commit to keeping my laptop plugged in. So, I load up the video on a [hfs+ usb stick](rpi-sound.html), and control the video via ssh.
+I often like to watch movies on a projector, but I don't always want to commit to keeping my laptop plugged in. So, I load up the video on a [hfs+ usb stick](rpi-sound), and control the video via ssh.
 
 Omxplayer is cool because it uses the GPU (rad for 1080p). It's uncool because it doesn't support ALSA: audio can't be routed to a USB interface, only HDMI or the built-in 8th-inch jack.
 
