@@ -11,6 +11,10 @@ group: web
 
 # migrate site to github pages
 
+I have a bunch of flat-file static websites, which I've forever served from my ec2 instance. I already sync them with the server via git, so it's super easy to move them over to gh-pages hosting.
+
+## setup gh-pages branch
+
 assumes preexisting git repo using master branch
 
 	git checkout -b gh-pages
