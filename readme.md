@@ -28,4 +28,4 @@ Website and guides by [Andrew Monks](http://monks.co)
 
 Code and site hosted on [Github](https://github.com/andrewjmonks/rpi-setup)
 
-released under the [MIT License](/license)
+released under the [MIT License](/license.html)
