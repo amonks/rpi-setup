@@ -19,3 +19,7 @@ html, body {
 	/* negative indent by footer height */
 	margin: 0 auto -60px;
 }
+
+footer, #push {
+	height: 60px;
+}
