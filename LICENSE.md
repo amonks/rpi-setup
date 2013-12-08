@@ -1,3 +1,11 @@
+---
+
+layout: default
+title: License
+permalink: /license
+
+---
+
 The MIT License (MIT)
 
 Copyright (c) 2013 Andrew Monks
