@@ -23,11 +23,11 @@ use Pi Filler http://ivanx.com/raspberrypi/ to put it on a microsd card
 
 plug bbb into ethernet and sd card. Boot while holding down the button 
 
-3. 5
+4.
 
 CRUCIAL expand partition to size of sd card using gparted or http://www.gigamegablog.com/2012/09/26/beaglebone-101-linux-tricks-for-backing-up-and-resizing-your-microsd-card/
 
-4.
+5.
 
 http://derekmolloy.ie/set-ip-address-to-be-static-on-the-beaglebone-black/
 
@@ -38,25 +38,15 @@ do step 1 of ^^ to set nameservers:
 
 also edit /etc/resolv.conf to last until reboot
 
-5.
+6.
 
 	opkg --tmp-dir ~ update
 	opkg --tmp-dir ~ upgrade
 
 **froze once during this
 
-6.
+7.
 
 set clock
 
 /usr/bin/ntpdate -b -s -u pool.ntp.org
-
-7.
-
-install wifi driver
-
-http://www.codealpha.net/864/how-to-set-up-a-rtl8192cu-on-the-beaglebone-black-bbb/
-
-8.
-
-install tmux; mosh: http://blog.outten.net/article/2013-02-02-beaglebone-setup
