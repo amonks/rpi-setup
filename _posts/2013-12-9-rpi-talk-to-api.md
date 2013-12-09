@@ -21,6 +21,8 @@ In this example, I'm going to use a mic hooked up to the pi to record speech and
 
 ## google translate shell script
 
+stt.sh:
+
 	#DaveConroy.com
 	#10/29/13
 	#stt.sh
@@ -34,3 +36,11 @@ In this example, I'm going to use a mic hooked up to the pi to record speech and
 	echo "You Said:"
 	value=`cat stt.txt`
 	echo "$value"
+
+then make it executable
+
+	sudo chmod +x stt.sh
+
+### credits
+
+speech to text script by [dave conroy](http://www.daveconroy.com/turn-raspberry-pi-translator-speech-recognition-playback-60-languages/)
