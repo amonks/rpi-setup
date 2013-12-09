@@ -43,7 +43,7 @@ also edit /etc/resolv.conf to last until reboot
 	opkg --tmp-dir ~ update
 	opkg --tmp-dir ~ upgrade
 
-**froze once during this
+**froze once during this**
 
 7.
 
