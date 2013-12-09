@@ -9,9 +9,15 @@ group: raspberry-pi
 
 ---
 
-#	talk to an api from raspberry pi
+#	talk to an api from raspberry pi -- work in progress
 
-useful for some reasons [blurb]
+I'm pretty into web development, so I'm really excited by using the rpi to connect data from physical sensors to a server.
+
+The [olab](http://olab.io), for example, is considering using a light sensor connected to a raspberry pi in the lab to control the background color of their new webpage. If the lights are off, the background color is dark, if they're on, it's bright, making it easy to see if someone's in the lab.
+
+It's possible to accomplish this by serving the website directly from the pi; but a more robust solution is to set up a proper data-center server listen for messages from your pi.
+
+In this example, I'm going to use a mic hooked up to the pi to record speech and convert it to text using the google traslate API. Then, I'll send that text to a server to display the last thing I've said.
 
 ## google translate shell script
 
