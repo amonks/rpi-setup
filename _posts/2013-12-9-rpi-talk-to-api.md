@@ -5,7 +5,7 @@ title: talk to an api from raspberry pi
 tags:
 - guide
 - rpi
-group: rpi
+group: raspberry-pi
 
 ---
 
