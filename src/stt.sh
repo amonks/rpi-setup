@@ -22,3 +22,7 @@ wget -q -U "Mozilla/5.0" --post-file stt-output/stt-recording.flac --header "Con
 echo "You Said:"
 value=`cat stt-output/stt-text.txt`
 echo "$value"
+
+echo "put to server"
+url= "http://svarog.local:4567/$value"
+wget "$url"
