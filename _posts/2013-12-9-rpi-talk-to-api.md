@@ -9,22 +9,49 @@ group: raspberry-pi
 
 ---
 
-#	talk to an api from raspberry pi
+#	talk to an api from raspberry pi -- work in progress
 
-useful for some reasons [blurb]
+I'm pretty into web development, so I'm really excited by using the rpi to connect data from physical sensors to a server.
+
+The [olab](http://olab.io), for example, is considering using a light sensor connected to a raspberry pi in the lab to control the background color of their new webpage. If the lights are off, the background color is dark, if they're on, it's bright, making it easy to see if someone's in the lab.
+
+It's possible to accomplish this by serving the website directly from the pi; but a more robust solution is to set up a proper data-center server listen for messages from your pi.
+
+In this example, I'm going to use a mic hooked up to the pi to record speech and convert it to text using the google traslate API. Then, I'll send that text to a server to display the last thing I've said.
 
 ## google translate shell script
+
+Here's a shell script by Dave Conroy that uses alsa te record speech, converts it to flac, sends it to google, and prints the response to a text file.
+
+stt.sh:
 
 	#DaveConroy.com
 	#10/29/13
 	#stt.sh
+	#modified by Andrew Monks
 
 	echo "Recording your Speech (Ctrl+C to Transcribe)"
-	arecord -D plughw:0,0 -f cd -t wav -d 0 -q -r 16000 | flac - -s -f --best --sample-rate 16000 -o daveconroy.flac;
+	arecord -D plughw:0,0 -f cd -t wav -d 0 -q -r 16000 | flac - -s -f --best --sample-rate 16000 -o stt-recording.flac;
 
 	echo "Converting Speech to Text..."
-	wget -q -U "Mozilla/5.0" --post-file daveconroy.flac --header "Content-Type: audio/x-flac; rate=16000" -O - "http://www.google.com/speech-api/v1/recognize?lang=en-us&client=chromium" | cut -d\" -f12  > stt.txt
+	wget -q -U "Mozilla/5.0" --post-file stt-recording.flac --header "Content-Type: audio/x-flac; rate=16000" -O - "http://www.google.com/speech-api/v1/recognize?lang=en-us&client=chromium" | cut -d\" -f12 > stt-text.txt
 
 	echo "You Said:"
-	value=`cat stt.txt`
+	value=`cat stt-text.txt`
 	echo "$value"
+
+then make it executable
+
+	sudo chmod +x stt.sh
+
+You'll need `flac` installed. Use
+
+	apt-get install flac
+
+## triggering the shell script
+
+We have a way to convert speech to text, but we still need to write a handler that decides when to record, and posts the results to our server. (We also still need a server)
+
+### credits
+
+speech to text script by [dave conroy](http://www.daveconroy.com/turn-raspberry-pi-translator-speech-recognition-playback-60-languages/)

@@ -18,3 +18,5 @@ this script uses 0.43.4, but the most recent at any given time is on [sourceforg
 	wget http://cl.ly/SqbC/pd-extended_0.43.4~extended1-1~raspbian_wheezy_armhf.deb
 	sudo dpkg -i pd-extended_0.43.4~extended1-1~raspbian_wheezy_armhf.deb 
 	sudo apt-get -f install
+
+then launch pd with `pd-extended`

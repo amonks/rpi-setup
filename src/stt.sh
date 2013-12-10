@@ -11,4 +11,8 @@ wget -q -U "Mozilla/5.0" --post-file stt-recording.flac --header "Content-Type: 
 
 echo "You Said:"
 value=`cat stt-text.txt`
+<<<<<<< HEAD
 echo "$value"
+=======
+echo "$value"
+>>>>>>> 5a4ff24810a5c8b4a5f156a256a4d92809a26390
