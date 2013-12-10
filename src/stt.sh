@@ -10,6 +10,7 @@ arecord -D plughw:0,0 --duration=5 -f cd -t wav -d 0 -q -r 16000 | flac - -s -f 
 PID=$!
 sleep 5s
 kill $PID
+sleep 1s
 
 echo "Converting Speech to Text..."
 wget -q -U "Mozilla/5.0" --post-file stt-output/stt-recording.flac --header "Content-Type: audio/x-flac; rate=16000" -O - "http://www.google.com/speech-api/v1/recognize?lang=en-us&client=chromium" | cut -d\" -f12 > stt-output/stt-text.txt
