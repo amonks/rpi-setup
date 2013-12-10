@@ -3,6 +3,8 @@
 #stt.sh
 #modified by Andrew Monks
 
+mkdir -p stt-output
+
 echo "Recording your Speech (Ctrl+C to Transcribe)"
 arecord -D plughw:0,0 --duration=5 -f cd -t wav -d 0 -q -r 16000 | flac - -s -f --best --sample-rate 16000 -o stt-output/stt-recording.flac;
 
