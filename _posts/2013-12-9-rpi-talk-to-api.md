@@ -58,9 +58,65 @@ You'll need `flac` installed. Use
 
 	apt-get install flac
 
-## triggering the shell script
+## api
 
-We have a way to convert speech to text, but we still need to write a handler that decides when to record, and posts the results to our server. (We also still need a server)
+### make it
+
+Now we need an API. I made a super-simple app (ready for free hosting on heroku) that listens for incoming text and then displays it.
+
+It's available in a [separate repo](https://github.com/amonks/rpi-heroku-api-demo)
+
+It's also live at [http://gentle-inlet-8461.herokuapp.com/](http://gentle-inlet-8461.herokuapp.com/).
+
+Here's the sinatra code to make it happen:
+
+	# Require the bundler gem and then call Bundler.require to load in all gems
+	# listed in Gemfile.
+	require 'bundler'
+	Bundler.require
+
+	# set up string array to keep sayings in
+	data = Array.new
+
+	# serve pages
+	get '/' do
+	  data.to_s
+	end
+
+	get '/newtext/*' do
+	  data.push(params[:splat])
+	  redirect '/'
+	end
+
+### host it
+
+A big reason why I use sinatra so much is free hosting on Heroku. Here's how to do it. Commands assume you're in the directory of the app you're trying to host. Further instructions available on [heroku's website](https://devcenter.heroku.com/articles/getting-started-with-ruby#local-workstation-setup)
+
+1. [create a heroku account](https://id.heroku.com/signup)
+
+2. install the [heroku toolbest](https://toolbelt.heroku.com/)
+
+3. `heroku login`
+
+4. `git init`
+
+5. `git add --all .`
+
+6. `git commit -am "initial commit"`
+
+7. `heroku create`
+
+8. `git push heroku master`
+
+## update shell script
+
+I added the following to my shell script to make it send results to the server on heroku. You'll get a different domain name in your heroku setup.
+
+	echo "put to server"
+	url="http://gentle-inlet-8461.herokuapp.com/newtext/$value"
+	echo "$url"
+	wget "$url"
+
 
 ### credits
 
