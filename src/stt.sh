@@ -24,6 +24,6 @@ value=`cat stt-output/stt-text.txt`
 echo "$value"
 
 echo "put to server"
-url="http://svarog.local/$value"
+url="http://gentle-inlet-8461.herokuapp.com/newtext/$value"
 echo "$url"
 wget "$url"
