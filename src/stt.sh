@@ -13,7 +13,7 @@ kill $PID
 sleep 1s
 
 echo "Converting speech to FLAC"
-flac - -s -f --best --sample-rate 16000 -o stt-output/stt-recording.flac
+flac -5 -s -f --best --sample-rate 16000 -o stt-output/stt-recording.flac stt-output/stt-recording.wav
 
 echo "Converting Speech to Text..."
 wget -q -U "Mozilla/5.0" --post-file stt-output/stt-recording.flac --header "Content-Type: audio/x-flac; rate=16000" -O - "http://www.google.com/speech-api/v1/recognize?lang=en-us&client=chromium" | cut -d\" -f12 > stt-output/stt-text.txt
