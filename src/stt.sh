@@ -6,11 +6,7 @@
 mkdir -p stt-output
 
 echo "Recording your Speech (Ctrl+C to Transcribe)"
-arecord -D plughw:0,0 --duration=5 -f cd -t wav -d 0 -q -r 16000 stt-output/stt-recording.wav &
-PID=$!
-sleep 5s
-kill $PID
-sleep 1s
+arecord --duration=5 -D plughw:0,0 -f cd -t wav -d 0 -q -r 16000 stt-output/stt-recording.wav
 
 echo "Converting speech to FLAC"
 flac -5 -s -f --best --sample-rate 16000 -o stt-output/stt-recording.flac stt-output/stt-recording.wav
