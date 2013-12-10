@@ -28,3 +28,5 @@ echo "put to server"
 url="http://gentle-inlet-8461.herokuapp.com/newtext/$value"
 echo "$url"
 wget -qO- "$url" &> /dev/null
+
+rm -r stt-output/
