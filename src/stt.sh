@@ -24,5 +24,6 @@ value=`cat stt-output/stt-text.txt`
 echo "$value"
 
 echo "put to server"
-url= "http://svarog.local:4567/$value"
+url="http://svarog.local/$value"
+echo "$url"
 wget "$url"
