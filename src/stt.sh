@@ -11,6 +11,7 @@ PID=$!
 #set duration of recording
 sleep 5s
 kill $PID
+echo "End recording"
 sleep 1s
 
 echo "Converting speech to FLAC"
@@ -26,4 +27,4 @@ echo "$value"
 echo "put to server"
 url="http://gentle-inlet-8461.herokuapp.com/newtext/$value"
 echo "$url"
-wget "$url"
+wget -qO- "$url" &> /dev/null

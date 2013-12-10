@@ -115,7 +115,7 @@ I added the following to my shell script to make it send results to the server o
 	echo "put to server"
 	url="http://gentle-inlet-8461.herokuapp.com/newtext/$value"
 	echo "$url"
-	wget "$url"
+	wget -qO- "$url" &> /dev/null
 
 
 ### credits
