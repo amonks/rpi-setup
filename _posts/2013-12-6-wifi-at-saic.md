@@ -37,7 +37,7 @@ copy wpa_supplicant file
 
 edit it with your SAIC username and password
 
-	sudo nano /etc/wpa_supplicant/wpa_supplicant/wpa_supplicant.conf
+	sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
 After you edit the file you can plug / unplug your USB wifi interface, or you can reboot the pi or you can do:
 

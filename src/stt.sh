@@ -3,8 +3,10 @@
 #stt.sh
 #modified by Andrew Monks
 
-LOOPCOUNT=2
+LOOPCOUNT=10
 mkdir -p stt-output
+
+time="10s"
 
 for i in `seq 1 $LOOPCOUNT`;
 do
@@ -12,7 +14,7 @@ do
 	arecord -D plughw:0,0  -f cd -t wav -d 0 -q -r 16000 stt-output/stt-recording-$i.wav &
 	PID=$!
 	#set duration of recording
-	sleep 5s
+	sleep $time
 	kill $PID
 	echo "End recording"
 	sleep 1s
