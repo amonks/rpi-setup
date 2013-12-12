@@ -33,6 +33,8 @@ do
 	url="http://gentle-inlet-8461.herokuapp.com/newtext/$value"
 	echo "$url"
 	wget -qO- "$url" &> /dev/null
+
+	rm stt-output/*
 done
 
 echo "I'm done"
