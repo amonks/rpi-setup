@@ -41,3 +41,5 @@ The first time I booted my raspberrypi with openELEC it showed an on-screen conf
 Perhaps the coolest thing openELEC/xbmc can do out of the box is Airplay. Once turned on in settings, your network-connected raspberrypi becomes an Airplay server—which means you can stream media to it directly / easily from iOS or itunes, by clicking the TV-like icon to the right of the play button.
 
 ![airplay button in itunes](http://cl.ly/Suaq/Screen%20Shot%202013-12-11%20at%2010.31.07%20PM.png)
+
+On my network, it streams well with about a 6-second buffer.

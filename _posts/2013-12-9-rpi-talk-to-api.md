@@ -9,7 +9,7 @@ group: raspberry-pi
 
 ---
 
-#	talk to an api from raspberry pi -- work in progress
+#	talk to an api from raspberry pi
 
 I'm pretty into web development, so I'm really excited by using the rpi to connect data from physical sensors to a server.
 
