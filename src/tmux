@@ -1,5 +1,5 @@
 #! /bin/sh
-# /etc/init.d/tmux 
+# /etc/init.d/tmux
 
 ### BEGIN INIT INFO
 # Provides:          tmux
@@ -18,12 +18,12 @@ case "$1" in
   start)
     echo "Starting tmux"
     # run application you want to start
-    su bitnami -c 'tmux -d'
+    su pi -c '/usr/bin/tmux new -d'
     ;;
   stop)
     echo "Stopping tmux"
     # kill application you want to stop
-    su bitnami -c 'tmux kill-server'
+    su pi -c 'tmux kill-server'
     ;;
   *)
     echo "Usage: /etc/init.d/tmux {start|stop}"
