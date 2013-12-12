@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: make an rpi respond to a button
+title: make a raspberry pi respond to a button
 tags:
 - guide
 - rpi
