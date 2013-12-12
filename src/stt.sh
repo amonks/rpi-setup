@@ -3,7 +3,7 @@
 #stt.sh
 #modified by Andrew Monks
 
-LOOPCOUNT=2
+LOOPCOUNT=1000
 mkdir -p stt-output
 
 for i in `seq 1 $LOOPCOUNT`;
