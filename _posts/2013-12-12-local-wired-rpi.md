@@ -17,4 +17,4 @@ At SAIC however, since the network is extra secure (or something) you can't inte
 
 Instead, configure sharing to share the hethernet network back out over ethernet.
 
-!(http://cl.ly/Svnm/Screen%20Shot%202013-12-12%20at%2012.02.50%20PM.png)
+![system preferences screenshot](http://cl.ly/Svnm/Screen%20Shot%202013-12-12%20at%2012.02.50%20PM.png)
