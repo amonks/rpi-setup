@@ -6,9 +6,9 @@ permalink: /index.html
 
 ---
 
-# rpi setup
+# Hi!
 
-rpi setup is a collection of guides about doing various things that might involve a RaspberryPi. It also includes things I've learned about Jekyll while putting together this package.
+This is a collection of guides for things. Mostly related to raspberry pi. My sweet-spot audience at the moment is probably developers (or at least people who know their way around a shell) trying to get started with the Raspberry Pi or find inspiration for projects.
 
 The guides assume that you've run `git clone https://github.com/andrewjmonks/rpi-setup.git` in the home directory of your pi.
 
