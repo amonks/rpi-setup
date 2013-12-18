@@ -10,9 +10,9 @@ permalink: /index.html
 
 This is a collection of guides for things. Mostly related to raspberry pi. My sweet-spot audience at the moment is probably developers (or at least people who know their way around a shell) trying to get started with the Raspberry Pi or find inspiration for projects.
 
-The guides assume that you've run `git clone https://github.com/amonks/rpi-setup.git` in the home directory of your pi.
-
 ## structure
+
+The guides assume that you've run `git clone https://github.com/amonks/rpi-setup.git` in the home directory of your pi.
 
 One single github repo includes the website, its source files, and the source files for the pi. 
 
