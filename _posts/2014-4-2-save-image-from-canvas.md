@@ -49,6 +49,8 @@ The following javascirpt object provides three functions:
 *   `ImageSaver.make_url_from_data(dataURI)` makes a blob from a dataURI and returns that blob's URI, requires make_blob
 *   `ImageSaver.make_blob(dataURI)` makes a blob from a dataURI and returns that blob.
 
+### the script
+
     ImageSaver = {
         // function to force-download from a data uri as a filename
         // nb the download="filename" attribute isn't yet supported by safari
