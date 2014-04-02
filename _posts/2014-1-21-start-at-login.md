@@ -6,7 +6,7 @@ tags:
 - rpi
 - guide
 - linux
-group: raspberry-pi
+group: general
 
 ---
 
