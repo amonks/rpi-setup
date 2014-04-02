@@ -26,16 +26,16 @@ The solution is to convert the super-long URI to a blob, and link to that blob's
 
 ## usage
 
-canvas = $('<canvas>');
-...
+    canvas = $('<canvas>');
+    ...
 
-superLongURI = canvas.toDataURL("image/png");
+    superLongURI = canvas.toDataURL("image/png");
 
-// to save the image to the user's computer with a specified filename:
-ImageSaver.download_data_uri(superLongURI, fileName);
+    // to save the image to the user's computer with a specified filename:
+    ImageSaver.download_data_uri(superLongURI, fileName);
 
-// to only generate a shortened URI, not saving it.
-shortURI = ImageSaver.make_url_from_data(dataURI);
+    // to only generate a shortened URI, not saving it.
+    shortURI = ImageSaver.make_url_from_data(dataURI);
 
 
 
