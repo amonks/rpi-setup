@@ -8,19 +8,11 @@ permalink: /index.html
 
 # Hi!
 
-This is a collection of guides for things. Mostly related to raspberry pi. My sweet-spot audience at the moment is probably developers (or at least people who know their way around a shell) trying to get started with the Raspberry Pi or find inspiration for projects.
+I'm [Andrew](http://monks.co).
 
-## structure
+I use this website as a sort of lab notebook: if I figure out how to do something I might need to do again, I (sometimes) document the process here.
 
-The guides assume that you've run `git clone https://github.com/amonks/rpi-setup.git` in the home directory of your pi.
-
-One single github repo includes the website, its source files, and the source files for the pi. 
-
-The website is generated from individual markdown files in the `/_posts` folder, into `_site`. If you're in your pi terminal, read the docs with `less ~/rpi-setup/posts/2013-12-6-wifi-at-saic.md`
-
-Pi source files and scripts are in `/src`.
-
-`/assets`, `/_layouts`, `/.gitignore`, `CNAME`, `Gemfile`, `Gemfile.lock`, `_config.yml`, and `readme.md` are used by github to generate the website, which is available at http://endurativemod.es
+I primarily work in two domains: web development, and embedded hardware with RaspberryPis. My documentation tends to be about etiher of those things, or about the syntax for useful tasks in command line utilities I use less-than-regularly.
 
 ## credits
 
