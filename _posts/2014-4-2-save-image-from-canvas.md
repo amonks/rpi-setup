@@ -43,11 +43,17 @@ The solution is to convert the super-long URI to a blob, and link to that blob's
 
 ## javascript
 
+The following javascirpt object provides three functions:
+
+*   `ImageSaver.download_data_uri(dataURI, fileName)` main wrapper function to download an image, requires both functions below
+*   `ImageSaver.make_url_from_data(dataURI)` makes a blob from a dataURI and returns that blob's URI, requires make_blob
+*   `ImageSaver.make_blob(dataURI)` makes a blob from a dataURI and returns that blob.
+
     ImageSaver = {
         // function to force-download from a data uri as a filename
         // nb the download="filename" attribute isn't yet supported by safari
         download_data_uri: function(dataURI, fileName) {
-            var tempUrl = Doger.make_url_from_data(dataURI);
+            var tempUrl = ImageSaver.make_url_from_data(dataURI);
             var link = $('<a href="' + tempUrl + '" id="download" download="' + fileName + '" target="_blank"> </a>');
             $("body").append(link);
             $("#download").get(0).click();
@@ -57,7 +63,7 @@ The solution is to convert the super-long URI to a blob, and link to that blob's
         // if a data-uri is larger than 2mb, chrome's address bar can't handle it.
         // fortunately, you can blob it and then use a temporary blob url
         make_url_from_data: function(dataURI) {
-            var blob = Doger.make_blob(dataURI);
+            var blob = ImageSaver.make_blob(dataURI);
             var tempUrl = URL.createObjectURL(blob);
             return tempUrl;
         },
