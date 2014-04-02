@@ -9,6 +9,8 @@ group: web
 
 ---
 
+# How to save an image to disk from a canvas
+
 The Canvas object includes a `toDataURL` method that returns a dataURI (a really *really* long URI that contains a base64-encoded version of the image)
 
     canvas = $('<canvas>');
@@ -39,7 +41,7 @@ The solution is to convert the super-long URI to a blob, and link to that blob's
 
 
 
-# javascript
+## javascript
 
     ImageSaver = {
         // function to force-download from a data uri as a filename
